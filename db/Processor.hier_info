@@ -1,0 +1,37 @@
+|Processor
+SW[0] => DBUS[0].IN1
+SW[1] => DBUS[1].IN1
+SW[2] => DBUS[2].IN1
+SW[3] => DBUS[3].IN1
+SW[4] => RegAWn.IN1
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+KEY[0] => ~NO_FANOUT~
+LEDG[0] <= reg4:AReg.port3
+LEDG[1] <= reg4:AReg.port3
+LEDG[2] <= reg4:AReg.port3
+LEDG[3] <= reg4:AReg.port3
+
+
+|Processor|reg4:AReg
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Wn => Q[0]~reg0.ENA
+Wn => Q[1]~reg0.ENA
+Wn => Q[2]~reg0.ENA
+Wn => Q[3]~reg0.ENA
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
