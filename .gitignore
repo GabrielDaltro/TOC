@@ -51,9 +51,11 @@
 *.pin
 *.mif
 *.hex
+*.hdb
 
 # ignore Quartus II generated folders
 db/*.*
+db/*.*.*
 incremental_db/*.*
 simulation/*.*
 timing/*.*
